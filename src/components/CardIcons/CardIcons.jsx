@@ -12,7 +12,6 @@ function CardIcons({ image, alt, title, subtitle, link }) {
         if (title !== "E-mail") {
             window.open(urlLink);
         }
-
     }
 
     return (

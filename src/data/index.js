@@ -4,6 +4,10 @@ import IconInsta from '../assets/icon-instagram.svg';
 import IconGithub from '../assets/icon-github.svg';
 import IconPhone from '../assets/icon-phone.svg';
 
+import ImageChargeManager from '../assets/charge-manager.png';
+import ImagePokedex from '../assets/pokedex.png';
+import ImageDindin from '../assets/dindin.png';
+
 import IconCode from '../assets/icon-code.svg';
 import IconResponsive from '..//assets/icon-responsive.svg';
 import IconMobile from '../assets/icon-mobile.svg';
@@ -21,68 +25,85 @@ export const dataIcons = [
         image: `${IconLinkedin}`,
         alt: 'networks',
         title: "Linkedin",
-        subtitle: "dionnatan-alves-pereira"
+        subtitle: "dionnatan-alves-pereira",
+        link: "https://www.linkedin.com/in/dionnatan-alves-pereira/"
     },
     {
         id: 2,
         image: `${IconEmail}`,
         alt: 'networks',
         title: "E-mail",
-        subtitle: "dionnatan_dev@hotmail.com"
+        subtitle: "dionnatan_dev@hotmail.com",
+        link: "<dionnatan_dev@hotmail.com>"
     },
     {
         id: 3,
         image: `${IconInsta}`,
         alt: 'networks',
         title: "Instagram",
-        subtitle: "@dionn.dev"
+        subtitle: "@dionn.dev",
+        link: "https://www.instagram.com/dionn.dev/"
     },
     {
         id: 4,
         image: `${IconPhone}`,
         alt: 'networks',
         title: "Telefone",
-        subtitle: "(98) 98888-8888"
+        subtitle: "(98) 98494-4350",
+        link: "https://wa.me/5598984944350"
     },
     {
         id: 5,
         image: `${IconGithub}`,
         alt: 'networks',
         title: "Github",
-        subtitle: "(98) 98888-8888"
+        subtitle: "Dionn-AP",
+        link: "https://github.com/Dionn-AP"
     }
 ];
 
 export const cardProject = [
     {
         id: 1,
-        title: "Título do projeto",
-        subtitle: "Tecnologias: HTML, CSS e JS."
+        title: "Sistema de Cobranças",
+        subtitle: "Tecnologias: React, CSS, NodeJS e Postgres.",
+        image: `${ImageChargeManager}`,
+        link: "https://htiml5.netlify.app/"
     },
     {
         id: 2,
         title: "Título do projeto",
-        subtitle: "Tecnologias: HTML, CSS e JS."
+        subtitle: "Tecnologias: HTML, CSS e JS.",
+        image: `${ImagePokedex}`,
+        link: "https://myfirstpokedex.netlify.app/"
     },
     {
         id: 3,
-        title: "Título do projeto",
-        subtitle: "Tecnologias: HTML, CSS e JS."
+        title: "Controle de Finanças",
+        subtitle: "Tecnologias: React, CSS, NodeJS e Postgres",
+        image: `${ImageDindin}`,
+        link: "https://my-dindin-finance.netlify.app"
     },
     {
         id: 4,
-        title: "Título do projeto",
-        subtitle: "Tecnologias: HTML, CSS e JS."
+        title: "Meu projeto",
+        subtitle: "Tecnologias:",
+        image: `${""}`,
+        link: ""
     },
     {
         id: 5,
-        title: "Título do projeto",
-        subtitle: "Tecnologias: HTML, CSS e JS."
+        title: "Meu projeto",
+        subtitle: "Tecnologias:",
+        image: `${""}`,
+        link: ""
     },
     {
         id: 6,
-        title: "Título do projeto",
-        subtitle: "Tecnologias: HTML, CSS e JS."
+        title: "Meu projeto",
+        subtitle: "Tecnologias:",
+        image: `${""}`,
+        link: ""
     }
 ];
 

@@ -20,7 +20,10 @@ export const ContinerCard = styled.div`
 export const IntoCard = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #171717;
+    background-image: ${props => `url(${props.imageProject})`};
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border: 1px solid ${props => props.theme.border_color_main};
     height: 13rem;
     width: 100%;

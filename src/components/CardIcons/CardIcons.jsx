@@ -6,11 +6,18 @@ import {
     SubTitleIcon
 } from './CardIcons_Styled';
 
-function CardIcons({ image, alt, title, subtitle }) {
+function CardIcons({ image, alt, title, subtitle, link }) {
+
+    const openUrl = (urlLink) => {
+        if (title !== "E-mail") {
+            window.open(urlLink);
+        }
+
+    }
 
     return (
         <CardsIcon>
-            <BoxIcon>
+            <BoxIcon onClick={() => openUrl(link)}>
                 <ImageIcon
                     src={image}
                     alt={alt} />

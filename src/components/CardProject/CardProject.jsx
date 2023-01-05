@@ -6,13 +6,19 @@ import {
 } from './CardProject_Styled';
 
 
-function CardProject({ title, subtitle }) {
+function CardProject({ title, subtitle, image, link }) {
+
+    const openUrl = (urlLink) => {
+        window.open(urlLink)
+    }
 
     return (
-        <ContinerCard>
-            <IntoCard />
+        <ContinerCard onClick={() => openUrl(link)}>
+            <IntoCard
+                imageProject={image}
+            />
             <CardProjectTitle>{title}</CardProjectTitle>
-                <CardProjectSubTitle>{subtitle}</CardProjectSubTitle>
+            <CardProjectSubTitle>{subtitle}</CardProjectSubTitle>
         </ContinerCard>
     )
 }

@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components';
 import { themes } from '../global/colors.js';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { setStorage, getStorage } from '../services/storage';
+import Typed from 'react-typed';
 
 import {
   ContainerMain,
@@ -56,24 +58,30 @@ import IconSun from '../assets/icon-sun.svg';
 import IconMoon from '../assets/icon-moon.svg';
 
 function App() {
+  const [theme, setTheme] = useState(getStorage("theme"));
 
-  let leftOrRight = 'flex-start';
-  let themeDarkorLight;
-
-  const [togleBtn, setTogleBtn] = useState(false);
-
-  if (togleBtn) {
-    themeDarkorLight = themes.white;
+  if (theme == null) {
+    setStorage("theme", "black");
+    setTheme(getStorage("theme"));
   }
-  if (!togleBtn) {
-    themeDarkorLight = themes.black;
+
+  const setThemes = () => {
+    if (theme == "black") {
+      setStorage("theme", "white");
+      setTheme(getStorage("theme"));
+    }
+    if (theme == "white") {
+      setStorage("theme", "black");
+      setTheme(getStorage("theme"));
+    }
   }
+
+  useEffect(() => {
+  }, [theme])
 
   return (
-    <ThemeProvider theme={themeDarkorLight}>
-      <ContainerMain
-        themeColor={leftOrRight}
-      >
+    <ThemeProvider theme={(theme == "" || theme == "black") ? themes.black : themes.white}>
+      <ContainerMain>
         <ContainerContentInto>
           <Header>
             <TextLeftHeader>
@@ -87,7 +95,6 @@ function App() {
                   to='aboutme'>
                   <LinksHeader>Sobre min</LinksHeader>
                 </Link>
-
               </ListLinkHeader>
               <ListLinkHeader>
                 <Link
@@ -117,10 +124,15 @@ function App() {
           </Header>
           <ContainerTop>
             <ContainerTopContentLeft>
-              <ContainerTopContentLeftText>
-                Olá, eu sou o <br></br>
-                Dionnatan Alves
-              </ContainerTopContentLeftText>
+              <Typed
+                strings={["Olá, eu sou o Dionnatan Alves"]}
+                typeSpeed={50}
+                showCursor={false}
+              >
+                <ContainerTopContentLeftText>
+
+                </ContainerTopContentLeftText>
+              </Typed>
               <ContainerTopContentLeftTextSubTitle>
                 Desenvolvedor Front-End
               </ContainerTopContentLeftTextSubTitle>
@@ -133,7 +145,7 @@ function App() {
                   Download CV
                 </ContainerTopLeftButton>
                 <ContainerTopLeftButton
-                  colorButton={togleBtn ? "#171717" : "#F9F9F9"}
+                  colorButton={theme == "white" ? "#171717" : "#F9F9F9"}
                   bgColorButton={"transparent"}
                   borderColor={"#00DF5E"}
                 >
@@ -165,6 +177,7 @@ function App() {
                 alt={item.alt}
                 title={item.title}
                 subtitle={item.subtitle}
+                link={item.link}
               />
             ))}
           </ContainerIcons>
@@ -176,6 +189,8 @@ function App() {
                   key={item.id}
                   title={item.title}
                   subtitle={item.subtitle}
+                  image={item.image}
+                  link={item.link}
                 />
               ))}
             </WrapperProjects>
@@ -206,18 +221,12 @@ function App() {
             </WrapperSkill>
           </ContainerSkill>
           <TougleButonTheme
-            onClick={() => setTogleBtn(!togleBtn)}
-            justfyContent={leftOrRight}
+            onClick={() => setThemes()}
           >
             <IconToggleTheme
-              src={togleBtn ? IconSun : IconMoon}
+              src={theme == "white" ? IconSun : IconMoon}
               alt="symbols theme"
             />
-            {/* <BoxMessage>
-              <BoxMessageText>
-                Click para mudar o tema da página
-              </BoxMessageText>
-            </BoxMessage> */}
           </TougleButonTheme>
         </ContainerContentInto>
         <Footer />

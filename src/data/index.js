@@ -72,7 +72,7 @@ export const cardProject = [
     },
     {
         id: 2,
-        title: "Título do projeto",
+        title: "Pokedex",
         subtitle: "Tecnologias: HTML, CSS e JS.",
         image: `${ImagePokedex}`,
         link: "https://myfirstpokedex.netlify.app/"
@@ -86,22 +86,22 @@ export const cardProject = [
     },
     {
         id: 4,
-        title: "Meu projeto",
-        subtitle: "Tecnologias:",
+        title: "",
+        subtitle: "",
         image: `${""}`,
         link: ""
     },
     {
         id: 5,
-        title: "Meu projeto",
-        subtitle: "Tecnologias:",
+        title: "",
+        subtitle: "",
         image: `${""}`,
         link: ""
     },
     {
         id: 6,
-        title: "Meu projeto",
-        subtitle: "Tecnologias:",
+        title: "",
+        subtitle: "",
         image: `${""}`,
         link: ""
     }

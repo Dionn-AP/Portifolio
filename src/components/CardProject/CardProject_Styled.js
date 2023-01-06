@@ -30,6 +30,25 @@ export const IntoCard = styled.div`
     margin-bottom: 2.3rem;
 `
 
+export const EmptyProject = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    border: 1px solid ${props => props.theme.border_color_main};
+    height: 13rem;
+    width: 100%;
+    margin-bottom: 2.3rem;
+`
+
+export const TextProjectSoon = styled.h3`
+    color: #F9F9F9;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+`
+
 export const CardProjectTitle = styled.h3`
     color: #F9F9F9;
     font-style: normal;

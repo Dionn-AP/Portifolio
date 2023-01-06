@@ -5,7 +5,7 @@ export const ContainerMain = styled.div`
     position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: fle;
+    justify-content: flex-start;
     min-height: auto;
     max-width: 100vw;
     background-color: ${props => props.theme.background_main};
@@ -17,8 +17,12 @@ export const ContainerContentInto = styled.div`
     align-items: center;
     justify-content: center;
     min-height: auto;
-    padding: 0 14rem;
+    padding: 0 26rem;
     width: 100%;
+
+    @media only screen and (max-width: 1540px) {
+        padding: 0 14rem;
+    }
 ` 
 
 export const Header = styled.div`
@@ -80,6 +84,10 @@ export const ContainerTopContentLeft = styled.div`
     justify-content: center;
     height: auto;
     width: 27%;
+    
+    @media (max-width: 130rem) {
+        width: 36rem;
+    }
 `
 
 export const ContainerTopContentLeftText = styled.h2`
@@ -170,6 +178,13 @@ export const ContainerAboutMeSubTitle = styled.h2`
     font-size: 1.8rem;
     line-height: 3rem;
     margin-bottom: 3rem;
+`
+
+export const TagCubosAcademy = styled.a`
+    text-decoration: none;
+    color: rgb(229, 0, 123);
+    font-weight: 500;
+    letter-spacing: .12rem;
 `
 
 export const ContainerIcons = styled.div`

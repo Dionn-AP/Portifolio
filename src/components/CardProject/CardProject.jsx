@@ -1,6 +1,8 @@
 import {
     ContinerCard,
     IntoCard,
+    EmptyProject,
+    TextProjectSoon,
     CardProjectTitle,
     CardProjectSubTitle
 } from './CardProject_Styled';
@@ -9,16 +11,30 @@ import {
 function CardProject({ title, subtitle, image, link }) {
 
     const openUrl = (urlLink) => {
-        window.open(urlLink)
+        if (link) {
+            window.open(urlLink);
+        }
     }
 
     return (
         <ContinerCard onClick={() => openUrl(link)}>
-            <IntoCard
-                imageProject={image}
-            />
-            <CardProjectTitle>{title}</CardProjectTitle>
-            <CardProjectSubTitle>{subtitle}</CardProjectSubTitle>
+            {
+                image
+                    ? <IntoCard
+                        imageProject={image}
+                    />
+                    : <EmptyProject>
+                        <TextProjectSoon>Em breve</TextProjectSoon>
+                    </EmptyProject>
+            }
+            {
+                title &&
+                <CardProjectTitle>{title}</CardProjectTitle>}
+            {
+                subtitle &&
+                <CardProjectSubTitle>{subtitle}</CardProjectSubTitle>
+            }
+
         </ContinerCard>
     )
 }

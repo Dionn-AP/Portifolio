@@ -23,6 +23,7 @@ import {
   ContainerAboutMe,
   ContainerAboutMeTitle,
   ContainerAboutMeSubTitle,
+  TagCubosAcademy,
   ContainerIcons,
   ContainerProjects,
   WrapperProjects,
@@ -162,11 +163,11 @@ function App() {
               Sobre mim
             </ContainerAboutMeTitle>
             <ContainerAboutMeSubTitle>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              Olá! É um prazer ter você aqui. Me chamo Dionnatan e sou 
+              Desenvolvedor Web FullStack formado pela escola de tecnologia  
+              <TagCubosAcademy href='https://cubos.academy/' target="_blank"> Cubos Academy</TagCubosAcademy>. Fique a vontade 
+              para conhecer meus projetos e entrar em contato comigo para podermos criar 
+              algo novo juntos.
             </ContainerAboutMeSubTitle>
           </ContainerAboutMe>
           <ContainerIcons>

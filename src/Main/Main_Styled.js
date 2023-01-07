@@ -7,7 +7,7 @@ export const ContainerMain = styled.div`
     align-items: center;
     justify-content: flex-start;
     min-height: auto;
-    width: 100vw;
+    max-width: 100vw;
     background-color: ${props => props.theme.background_main};
 `
 

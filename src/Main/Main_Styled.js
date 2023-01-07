@@ -166,7 +166,7 @@ export const ContainerTopLeftButtons = styled.div`
 `
 
 export const ContainerTopDownButtons = styled.div`
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

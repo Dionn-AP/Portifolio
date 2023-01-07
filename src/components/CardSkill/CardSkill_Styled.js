@@ -12,15 +12,10 @@ export const CardContentSkill = styled.div`
     height: auto;
     width: auto;
     transition: all 0.2s;
-    cursor: pointer;
 
     :hover {
         transform: scale(1.03);
         transition: all 0.2s;
-    }
-
-    :active {
-        transform: scale(1);
     }
 `
 

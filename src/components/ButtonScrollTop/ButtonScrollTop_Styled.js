@@ -8,6 +8,10 @@ export const ContainerButtonScroll = styled.div`
     width: 5rem;
     background-color: transparent;
     cursor: pointer;
+
+    @media only screen and (max-width: 540px) {
+        right: 2rem;
+    }
 `
 
 export const ImageScroll = styled.img`

@@ -7,9 +7,9 @@ export const ContainerMain = styled.div`
     align-items: center;
     justify-content: flex-start;
     min-height: auto;
-    max-width: 100vw;
+    width: 100vw;
     background-color: ${props => props.theme.background_main};
-` 
+`
 
 export const ContainerContentInto = styled.div`
     display: flex;
@@ -23,7 +23,11 @@ export const ContainerContentInto = styled.div`
     @media only screen and (max-width: 1540px) {
         padding: 0 14rem;
     }
-` 
+
+    @media only screen and (max-width: 540px) {
+        padding: 0 1rem;
+    }
+`
 
 export const Header = styled.div`
     display: flex;
@@ -33,6 +37,10 @@ export const Header = styled.div`
     width: 100%;
     margin-bottom: 10rem;
     padding: 4rem 0;
+
+    @media only screen and (max-width: 540px) {
+        margin-bottom: 2.5rem;
+    }
 `
 
 export const TextLeftHeader = styled.p`
@@ -40,6 +48,23 @@ export const TextLeftHeader = styled.p`
     font-style: normal;
     font-weight: 700;
     font-size: 2.6rem;
+
+    @media only screen and (max-width: 540px) {
+        display: none;
+    }
+`
+
+export const TextTopHeader = styled.p`
+    color: ${props => props.theme.color_text_primary};
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6rem;
+
+    @media only screen and (max-width: 540px) {
+        display: flex;
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
 `
 
 export const UnotherListLinkHeader = styled.ul`
@@ -48,6 +73,12 @@ export const UnotherListLinkHeader = styled.ul`
     align-items: center;
     justify-content: space-between;
     width: 40%;
+
+    @media only screen and (max-width: 540px) {
+        flex-direction: column;
+        height: 15rem;
+        width: 100%;
+    }
 `
 
 export const ListLinkHeader = styled.li`
@@ -75,6 +106,11 @@ export const ContainerTop = styled.div`
     justify-content: space-between;
     width: 100%;
     margin-bottom: 16.8rem;
+
+    @media only screen and (max-width: 540px) {
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
 `
 
 export const ContainerTopContentLeft = styled.div`
@@ -85,8 +121,13 @@ export const ContainerTopContentLeft = styled.div`
     height: auto;
     width: 27%;
     
-    @media (max-width: 130rem) {
+    @media (max-width: 1300px) {
         width: 36rem;
+    }
+
+    @media only screen and (max-width: 540px) {
+        width: 100%;
+        align-items: center;
     }
 `
 
@@ -97,6 +138,10 @@ export const ContainerTopContentLeftText = styled.h2`
     font-size: 3.2rem;
     line-height: 4.6rem;
     margin-bottom: 1.8rem;
+
+    @media only screen and (max-width: 540px) {
+        text-align: center;
+    }
 `
 
 export const ContainerTopContentLeftTextSubTitle = styled.h4`
@@ -114,6 +159,23 @@ export const ContainerTopLeftButtons = styled.div`
     justify-content: space-between;
     height: auto;
     width: 100%;
+
+    @media only screen and (max-width: 540px) {
+        display: none;
+    }
+`
+
+export const ContainerTopDownButtons = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+
+    @media only screen and (max-width: 540px) {
+        display: flex;
+    }
 `
 
 export const ContainerTopLeftButton = styled.button`
@@ -149,6 +211,10 @@ export const ContainerTopContentImage = styled.div`
     background-size: 100%;
     height: 35rem;
     width: 35rem;
+
+    @media only screen and (max-width: 540px) {
+        margin-bottom: 2rem;
+    }
 `
 
 export const ContainerAboutMe = styled.div`
@@ -158,7 +224,7 @@ export const ContainerAboutMe = styled.div`
     justify-content: center;
     height: auto;
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 `
 
 export const ContainerAboutMeTitle = styled.h2`
@@ -195,7 +261,19 @@ export const ContainerIcons = styled.div`
     height: auto;
     width: 100%;
     gap: 10rem;
-    margin-bottom: 12.5rem;
+    margin-bottom: 12rem;
+
+    @media only screen and (max-width: 540px) {
+        justify-content: space-between;
+        overflow-x: scroll;
+        white-space: nowrap;
+        gap: 5rem;
+        padding: 0 1.5rem;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
 `
 
 export const ContainerProjects = styled.div`

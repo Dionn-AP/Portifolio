@@ -30,14 +30,6 @@ export const dataIcons = [
     },
     {
         id: 2,
-        image: `${IconEmail}`,
-        alt: 'networks',
-        title: "E-mail",
-        subtitle: "dionnatan_dev@hotmail.com",
-        link: "<dionnatan_dev@hotmail.com>"
-    },
-    {
-        id: 3,
         image: `${IconInsta}`,
         alt: 'networks',
         title: "Instagram",
@@ -45,7 +37,7 @@ export const dataIcons = [
         link: "https://www.instagram.com/dionn.dev/"
     },
     {
-        id: 4,
+        id: 3,
         image: `${IconPhone}`,
         alt: 'networks',
         title: "Telefone",
@@ -53,12 +45,20 @@ export const dataIcons = [
         link: "https://wa.me/5598984944350"
     },
     {
-        id: 5,
+        id: 4,
         image: `${IconGithub}`,
         alt: 'networks',
         title: "Github",
         subtitle: "Dionn-AP",
         link: "https://github.com/Dionn-AP"
+    },
+    {
+        id: 5,
+        image: `${IconEmail}`,
+        alt: 'networks',
+        title: "E-mail",
+        subtitle: "dionnatan_dev@hotmail.com",
+        link: "<dionnatan_dev@hotmail.com>"
     }
 ];
 

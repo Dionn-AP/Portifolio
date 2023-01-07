@@ -9,6 +9,7 @@ import {
   ContainerMain,
   TextLeftHeader,
   Header,
+  TextTopHeader,
   UnotherListLinkHeader,
   ListLinkHeader,
   LinksHeader,
@@ -18,6 +19,7 @@ import {
   ContainerTopContentLeftText,
   ContainerTopContentLeftTextSubTitle,
   ContainerTopLeftButtons,
+  ContainerTopDownButtons,
   ContainerTopLeftButton,
   ContainerTopContentImage,
   ContainerAboutMe,
@@ -84,6 +86,7 @@ function App() {
     <ThemeProvider theme={(theme == "" || theme == "black") ? themes.black : themes.white}>
       <ContainerMain>
         <ContainerContentInto>
+          <TextTopHeader>Portifólio</TextTopHeader>
           <Header>
             <TextLeftHeader>
               Portifólio
@@ -157,6 +160,22 @@ function App() {
             <ContainerTopContentImage
               srcImage={ImageDevelopment}
             />
+            <ContainerTopDownButtons>
+                <ContainerTopLeftButton
+                  colorButton={"#F9F9F9"}
+                  bgColorButton={"#00DF5E"}
+                  borderColor={"transparent"}
+                >
+                  Download CV
+                </ContainerTopLeftButton>
+                <ContainerTopLeftButton
+                  colorButton={theme == "white" ? "#171717" : "#F9F9F9"}
+                  bgColorButton={"transparent"}
+                  borderColor={"#00DF5E"}
+                >
+                  Entrar em contato
+                </ContainerTopLeftButton>
+              </ContainerTopDownButtons>
           </ContainerTop>
           <ContainerAboutMe id="aboutme">
             <ContainerAboutMeTitle>

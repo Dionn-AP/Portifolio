@@ -176,6 +176,7 @@ export const ContainerTopDownButtons = styled.div`
 
     @media only screen and (max-width: 540px) {
         display: flex;
+        justify-content: space-around;
     }
 `
 
@@ -294,6 +295,10 @@ export const WrapperProjects = styled.div`
     flex-wrap: wrap;
     width: 100%;
     gap: 4.5rem;
+
+    @media only screen and (max-width: 540px) {
+        flex-direction: column;
+    }
 `
 
 export const ContainerCardProject = styled.div`
@@ -328,6 +333,10 @@ export const WrapperServices = styled.div`
     flex-wrap: wrap;
     width: 100%;
     gap: 4.5rem;
+
+    @media only screen and (max-width: 540px) {
+        flex-direction: column;
+    }
 `
 
 export const CardServiceText = styled.h2`

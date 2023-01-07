@@ -9,6 +9,9 @@ import {
 function CardIcons({ image, alt, title, subtitle, link }) {
 
     const openUrl = (urlLink) => {
+        if (title == "E-mail") {
+            window.open(`mailto:${urlLink}`);
+        }
         if (title !== "E-mail") {
             window.open(urlLink);
         }

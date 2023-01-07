@@ -68,7 +68,7 @@ export const cardProject = [
         title: "Sistema de Cobranças",
         subtitle: "Tecnologias: React, CSS, NodeJS e Postgres.",
         image: `${ImageChargeManager}`,
-        link: "https://htiml5.netlify.app/"
+        link: "https://chargesmanager.netlify.app/"
     },
     {
         id: 2,

@@ -55,6 +55,7 @@ export const TextLeftHeader = styled.p`
 `
 
 export const TextTopHeader = styled.p`
+    display: none;
     color: ${props => props.theme.color_text_primary};
     font-style: normal;
     font-weight: 700;

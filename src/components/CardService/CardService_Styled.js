@@ -13,15 +13,10 @@ export const CardContentService = styled.div`
     height: auto;
     width: 35rem;
     transition: all 0.2s;
-    cursor: pointer;
     box-sizing: border-box;
     :hover {
         transform: scale(1.03);
         transition: all 0.2s;
-    }
-
-    :active {
-        transform: scale(1);
     }
 `
 

@@ -79,6 +79,10 @@ function App() {
     }
   }
 
+  const openCurriculum = () => {
+      window.open("https://onlinecurriculo.com.br/r/hIcCGzzsQ");
+  }
+
   useEffect(() => {
   }, [theme])
 
@@ -142,6 +146,7 @@ function App() {
               </ContainerTopContentLeftTextSubTitle>
               <ContainerTopLeftButtons>
                 <ContainerTopLeftButton
+                  onClick={() => openCurriculum()}
                   colorButton={"#F9F9F9"}
                   bgColorButton={"#00DF5E"}
                   borderColor={"transparent"}
@@ -161,31 +166,32 @@ function App() {
               srcImage={ImageDevelopment}
             />
             <ContainerTopDownButtons>
-                <ContainerTopLeftButton
-                  colorButton={"#F9F9F9"}
-                  bgColorButton={"#00DF5E"}
-                  borderColor={"transparent"}
-                >
-                  Download CV
-                </ContainerTopLeftButton>
-                <ContainerTopLeftButton
-                  colorButton={theme == "white" ? "#171717" : "#F9F9F9"}
-                  bgColorButton={"transparent"}
-                  borderColor={"#00DF5E"}
-                >
-                  Entrar em contato
-                </ContainerTopLeftButton>
-              </ContainerTopDownButtons>
+              <ContainerTopLeftButton
+                onClick={() => openCurriculum()}
+                colorButton={"#F9F9F9"}
+                bgColorButton={"#00DF5E"}
+                borderColor={"transparent"}
+              >
+                Download CV
+              </ContainerTopLeftButton>
+              <ContainerTopLeftButton
+                colorButton={theme == "white" ? "#171717" : "#F9F9F9"}
+                bgColorButton={"transparent"}
+                borderColor={"#00DF5E"}
+              >
+                Entrar em contato
+              </ContainerTopLeftButton>
+            </ContainerTopDownButtons>
           </ContainerTop>
           <ContainerAboutMe id="aboutme">
             <ContainerAboutMeTitle>
               Sobre mim
             </ContainerAboutMeTitle>
             <ContainerAboutMeSubTitle>
-              Olá! É um prazer ter você aqui. Me chamo Dionnatan e sou 
-              Desenvolvedor Web FullStack formado pela escola de tecnologia  
-              <TagCubosAcademy href='https://cubos.academy/' target="_blank"> Cubos Academy</TagCubosAcademy>. Fique a vontade 
-              para conhecer meus projetos e entrar em contato comigo para podermos criar 
+              Olá! É um prazer ter você aqui. Me chamo Dionnatan e sou
+              Desenvolvedor Web FullStack formado pela escola de tecnologia
+              <TagCubosAcademy href='https://cubos.academy/' target="_blank"> Cubos Academy</TagCubosAcademy>. Fique a vontade
+              para conhecer meus projetos e entrar em contato comigo para podermos criar
               algo novo juntos.
             </ContainerAboutMeSubTitle>
           </ContainerAboutMe>

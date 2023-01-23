@@ -101,7 +101,7 @@ function App() {
                   offset={-20}
                   smooth={true}
                   to='aboutme'>
-                  <LinksHeader>Sobre min</LinksHeader>
+                  <LinksHeader>Sobre mim</LinksHeader>
                 </Link>
               </ListLinkHeader>
               <ListLinkHeader>
